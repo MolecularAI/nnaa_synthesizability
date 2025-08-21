@@ -1,4 +1,4 @@
-# Non-Natural Amino Acid Synthesizability Analysis
+# NNAASynth : Non-Natural Amino Acid Synthesizability Analysis
 
 This repository provides an end-to-end framework for analyzing the synthetic accessibility of non-natural amino acids (NNAAs) and their protected forms. It leverages cheminformatics tools and deep learning models to:
 - Generate protected forms of input amino acids
@@ -35,7 +35,7 @@ Before using this repository, you must manually install the following external t
 
 - **Chemformer**  
   Transformer-based model for reaction and molecule prediction. **You will need to obtain only the vocabulary to run Chemformer API (bart_vocab_downstream.json)**
-  GitHub: https://github.com/chemprop/chemformer  
+  GitHub: https://github.com/MolecularAI/Chemformer  
   
 
 - **Expert-Augmented Scorer Model Files**
@@ -105,3 +105,4 @@ This project is licensed under the Apache 2.0 License. See the `LICENSE` file fo
 
 ## Contact
 For questions or contributions, please contact Gökçe Geylan at gokcegeylan96@gmail.com
+
