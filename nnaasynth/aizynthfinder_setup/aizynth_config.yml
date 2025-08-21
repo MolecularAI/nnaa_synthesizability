@@ -1,0 +1,28 @@
+filter:
+  standard:
+    type: quick_keras_filter
+    model: /path/to/aizynthfinder/public/models/uspto_filter_model.onnx
+  protect:
+    type: frozen_substructure
+    smarts_list:
+        - "C(=O)(OCC3c1ccccc1c2c3cccc2)"
+        - "[Si](C(C)(C)C)(C)(C)"
+        - "c1c([N+]([O-])=O)cc([N+]([O-])=O)cc1"
+        - "C(C[Si](C)(C)(C))"
+        - "C(C[Si]c1ccccc1)"
+        - "S(C(C)(C)(C))"
+        - "S(=O)(=O)c1ccc(C)cc1"
+expansion:
+  standard:
+    type: template-based
+    model: /path/to/aizynthfinder/public/models/uspto_model.onnx
+    template: /path/to/aizynthfinder/public/models/uspto_templates.csv.gz
+stock:
+  public_stocks: /path/to/stocks/zinc_stock.hdf5
+  protection_groups: /absolute/path/to/nnaasynth/aizynthfinder_setup/protection_groups_stocks.csv
+post_processing:
+  min_routes: 5
+  max_routes: 10
+  all_routes: True
+search:
+  max_transforms: 15
