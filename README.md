@@ -23,11 +23,6 @@ Before using this repository, you must manually install the following external t
   GitHub: https://github.com/MolecularAI/aizynthfinder
 
 
-- **reaction-utils**  
-  Repo for reaction data handling and cheminformatics utilities.  
-  GitHub: https://github.com/MolecularAI/reaction_utils
-
-
 - **AiZynthModels**  
   Provides models and environment for AiZynthFinder and Chemformer API.   
   GitHub: https://github.com/MolecularAI/aizynthmodels
@@ -105,4 +100,5 @@ This project is licensed under the Apache 2.0 License. See the `LICENSE` file fo
 
 ## Contact
 For questions or contributions, please contact Gökçe Geylan at gokcegeylan96@gmail.com
+
 
